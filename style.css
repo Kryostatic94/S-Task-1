@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    
+    
+}
+
+body{
+    font-family: Poppins;
+    padding-bottom: 50px;
+    background-color:#f2f2f4;
+   
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling Hero e Navbar */
+.hero{
+    background-image: url('https://www.stevewilliamskitchens.co.uk/wp-content/uploads/2016/01/modern-living-room-lighting.jpg');
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position:relative;
+    margin-bottom:20px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+}
+
+.search{
+    visibility: hidden;
+}
+
+
+.nav{
+    position: absolute;
+    background-color: transparent;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.nav ul{
+    display:flex;
+    list-style-type: none;
+    align-items:center;
+    justify-content:center;
+}
+
+.nav a,
+.nav i{
+    color:#fff;
+    text-decoration: none;
+    padding:7px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav .fa-search{
+    transform: rotate(90deg);
+}
+.nav .notify{
+    position: relative;
+}
+.nav .num{
+    background-color:#000;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    font-size: .5em;
+    top: 1px;
+    color: #fff;
+    right: 2px;
+    border-radius: 50%;
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:46px;
+}
+
+.unerlined{
+    margin: -20px 0 20px;
+    display:inline-block;
+    position:relative;
+}
+
+.unerlined::after{
+    content:'';
+    height:2px;
+    width:30%;
+    background:#fff;
+    position:absolute;
+    margin:auto;
+    bottom:-5px;
+    left:0; 
+    right:0;
+}
+
+.hero p{
+    font-family: Merienda;
+    font-size:16px;
+    font-style: italic;
+}
+
+.button{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    width: 120px;
+    height: 60px;
+    margin: 10px 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none !important;
+}
+
+/* Styling Section-1*/
+
+.section1{
+    background-color: #f2f2f4;
+}
+
+.container-section1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    
+
+}
+.panel {
+    width: 600px; 
+    height: 250px;
+    position: relative;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.panel .first{
+    font-size: 24px;
+    position: absolute;
+    top : 5px;
+    left: 10px;
+}
+
+.panel .one{
+    font-size: 12px;
+    position: absolute;
+    top : 37px;
+    left: 10px;
+}
+
+.panel .second{
+    font-size: 24px;
+    position: absolute;
+    bottom : 30px;
+    left: 10px;
+}
+
+.panel .two{
+    font-size: 16px;
+    position: absolute;
+    bottom : 10px;
+    left: 10px;
+}
+
+.panel .third{
+    font-size: 24px;
+    position: absolute;
+    top : 5px;
+    left: 10px;
+    color: #000;
+}
+
+.panel .three{
+    font-size: 16px;
+    position: absolute;
+    top : 37px;
+    left: 10px;
+    color: #000;
+}
+
+/* Styling Section-2*/
+.section2{
+    margin-top: 150px;
+    color:#000;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position:relative;
+    margin-bottom:20px;
+}
+
+.container-section2 .unerlined::after{
+    background:#000;
+    width: 100px;
+}
+
+.container-section2 p{
+    margin:5px 0;
+    color: gray;
+}
+
+/* Styling Section-3*/
+
+.container-pic{
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 0 .2px;
+}
+
+.container-pic p{
+    color: gray;
+    font-size: 14px;
+}
+
+h5{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.pic{
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    margin:10px 0;
+    position: relative;
+}
+
+.dark{
+    background-color: #000;
+    color: #fff;
+    width: 160px;
+    height: 80px;
+}
+
+.center{
+    justify-content:center;
+    margin:20px 0;
+}
+
+.line{
+    display: inline-flex;
+    text-align: center;
+    justify-content:center;
+}
+
+.discount{
+    text-decoration: line-through;
+}
+
+.newprice{
+    color: red !important;
+}
+
+.cornice{
+    max-width: auto;
+    height: auto;
+    display: flex;
+}
+
+.round{
+    position: relative;
+}
+
+.discounted{
+    background-color:orangered;
+}
+
+.new{
+    background-color:turquoise;
+}
+
+.top-right {
+    position: absolute;
+    bottom: 50px;
+    right: 1em;
+    width: 40px;
+    height: 40px;
+    font-size: 0.7em;
+    color: #fff;
+    border-radius: 50%;
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+
+/* Section 4 */
+
+.section4{
+    background-color: #fff;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.showup{
+    display:inline-flex;
+    margin: 40px 0;
+}
+
+.card{
+    border: transparent !important;
+    text-align: left !important;
+    justify-content: left !important;
+}
+
+.desc p{
+    margin: 10px 0;
+    color: #0f0f0f;
+    font-size: 12px;
+}
+
+.desc h2{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+/* Section 5 */
+
+.section5{
+    margin: 30px 0;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+}
+
+div input{
+    width: 240px;
+    height: 40px;
+    outline: none;
+}
+
+.spx{
+    margin: 0 10px;
+    padding: 0 5px;
+}
+
+.x{
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+.signup{
+    width: 140px;
+    height: 40px;
+    margin: 0 10px;
+    padding: 0 5px;
+}
+
+
+/* Section 6 */
+
+.section6{
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 60px 0;
+}
+
+.fa-plane{
+    transform: rotate(270deg);
+}
+.fa-life-ring{
+    transform: rotate(45deg);
+}
+
+.services{
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+.service{
+    display: inline-flex;
+}
+
+.service i{
+    color: gray;
+}
+
+.descript{
+    justify-content: left;
+    text-align: left;
+}
+
+.descript h6{
+    color: #000;
+}
+
+.descript p{
+    color: gray;
+    font-size: 12px;
+}
+
+.ico{
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Footer */
+
+.section7{
+    margin: 30px 0;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer ul{
+    color: gray;
+    font-size: 14px;
+    cursor: pointer;
+    list-style-type: none;
+    margin:0 10px;
+}
+
+footer .title{
+    color:#000;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.links{
+    text-align: left;
+}
+
+.find-us i{
+    font-size: 15px;
+    margin-left: 1px;
+}
+
+.socialnet{
+    margin-top: 10px;
+}
+
+.socialnet i{
+    font-size: 20px;
+    margin-left: 2px;
+}
+
+li .img-thumbnail{
+    width: 60px !important;
+    height: 60px !important;
+}
+
+
+
+
+
+
+@media screen and (max-width: 991px)
+{
+    .search{
+        visibility: visible;
+    }
+    .toggler{
+        visibility: hidden;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 574px)
+{
+    .container-pic{
+        justify-content:space-between;
+        align-items: center;
+        text-align: center;
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 920px)
+{
+    .spacing{
+        margin:10px 0;
+    }
+
+    .card{
+        justify-content:space-between !important;
+        align-items: center;
+        text-align: center;
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 574px)
+{
+    .top-right{
+        bottom: 0;
+        top: 10px;
+        right: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .panel .first{
+        font-size: 16px;
+    }
+    
+    .panel .one{
+        font-size: 12px;
+        top : 45px;
+    }
+    
+    .panel .second{
+        font-size: 16px;
+    }
+    
+    .panel .two{
+        font-size: 12px;
+        bottom : 10px;
+        left: 10px;
+    }
+    
+    .panel .third{
+        font-size: 16px;
+    }
+    
+    .panel .three{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 520px)
+{
+    .services{
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .service{
+        margin:10px 30px;
+        justify-content:space-around;
+    }
+
+    footer ul{
+        font-size: 10px;
+    }
+    
+
+    footer .title{
+        font-size: 12px;
+    }
+
+    .socialnet i{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 915px)
+{
+    li .img-thumbnail{
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+@media screen and (max-width: 411px)
+{
+    *{
+        width:100%
+    }
+    .signup{
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    div input{
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .x{
+        margin-left: 20px;
+    }
+
+    .panel .first{
+        font-size: 12px;
+    }
+    
+    .panel .one{
+        font-size: 8px;
+        top : 45px;
+    }
+    
+    .panel .second{
+        font-size: 12px;
+    }
+    
+    .panel .two{
+        font-size: 8px;
+        bottom : 10px;
+        left: 10px;
+    }
+    
+    .panel .third{
+        font-size: 12px;
+    }
+    
+    .panel .three{
+        font-size: 8px;
+    }
+
+    .nav a,
+    .nav i{
+        padding:20px 1px;
+    }
+
+    .nav ul{
+        font-size: 10px;
+
+    }
+    .margi{
+        margin-left:20px;
+    }
+
+    .social{
+        margin-left:20px;
+    }
+
+    .nav .num{
+        width: 10px;
+        height: 10px;
+        top: 15px;
+        right: 25px;
+    }
+
+    .find-us i{
+        font-size: 10px;
+        margin-left: 1px;
+    }
+    .cont{
+        display: inline;
+    }
+
+    li .img-thumbnail{
+        width: 30px !important;
+        height: 30px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .socialnet{
+        display: inline-flex;
+        justify-content: center;
+        align-items: left;
+    }
+    .socialnet i{
+        font-size: 10px;
+        margin-left: 0;
+    }
+
+    .useful{
+        margin-top: 10px;
+    }
+}
